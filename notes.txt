@@ -1,0 +1,10 @@
+  579  ADD main /
+  580  protoc -I=$SRC_DIR --python_out=$DST_DIR $SRC_DIR/addressbook.proto
+  581  ~/bin/protoc -I=$SRC_DIR --python_out=$DST_DIR $SRC_DIR/addressbook.proto
+  582  ~/bin/protoc -I=$SRC_DIR --python_out=./libraries $SRC_DIR/addressbook.proto
+  583  export SRC_DIR=~/src/go/src/earthcube.org/Project418/services/grpcBleveSearch/protobufs
+  584  ~/bin/protoc -I=$SRC_DIR --python_out=./libraries $SRC_DIR/bleve.proto
+  585  ls -lt libraries/
+  586  history
+  587  history | tail -10
+  588  history | tail -10 > notes.txt
